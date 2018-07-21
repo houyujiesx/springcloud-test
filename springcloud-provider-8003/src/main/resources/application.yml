@@ -1,5 +1,5 @@
 server:
-  port: 8001
+  port: 8003
   
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
@@ -13,7 +13,7 @@ spring:
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
-    url: jdbc:mysql://localhost:3306/cloudDB01              # 数据库名称
+    url: jdbc:mysql://localhost:3306/cloudDB03              # 数据库名称
     username: root
     password: root
     dbcp2:
@@ -27,7 +27,7 @@ eureka:
     service-url: 
        defaultZone: http://localhost:7001/eureka   
   instance:
-    instance-id: springcloud-user-8001 
+    instance-id: springcloud-user-8003 
     ip-address: 192.168.1.2 #直接制定具体的ip地址 需要配置prefer-ip-address: true 才会生效
     prefer-ip-address: true #在eureka页面显示具体服务的IP地址，如果配置了   ip-address 则以ip-address为准
              

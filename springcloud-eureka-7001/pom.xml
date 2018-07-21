@@ -5,29 +5,12 @@
     <artifactId>springcloud-test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>springcloud-consumer-80</artifactId>
-
-	<dependencies>
-		<dependency><!-- 自己定义的api -->
-			<groupId>com.spriingcloud.test</groupId>
-			<artifactId>springcloud-common</artifactId>
-			<version>${project.version}</version>
-		</dependency>
+  <artifactId>springcloud-eureka-7001</artifactId>
+  	<dependencies>
+		<!--eureka-server服务端 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-ribbon</artifactId>
+			<artifactId>spring-cloud-starter-eureka-server</artifactId>
 		</dependency>
 		<!-- 修改后立即生效，热部署 -->
 		<dependency>
