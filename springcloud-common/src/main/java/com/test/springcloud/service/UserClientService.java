@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.test.springcloud.entities.User;
 
-@FeignClient(value = "SPRINGCLOUD-USER")
+@FeignClient(value = "SPRINGCLOUD-USER", fallbackFactory = UserClientServiceFallbackFactory.class)
 public interface UserClientService {
 
 	

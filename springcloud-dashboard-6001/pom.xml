@@ -5,9 +5,9 @@
     <artifactId>springcloud-test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>springcloud-consumer-80</artifactId>
+  <artifactId>springcloud-dashboard-6001</artifactId>
 
-	<dependencies>
+<dependencies>
 		<dependency><!-- 自己定义的api -->
 			<groupId>com.spriingcloud.test</groupId>
 			<artifactId>springcloud-common</artifactId>
